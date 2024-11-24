@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sticky-add {
+    position: fixed;
+    top: 10%;
+    width: 160px;
+    height: 600px;
+    background-color: #ddd;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2
+}
+
+#add-left {
+    left: 10px;
+    background-image: url('add-left.png');
+}
+
+#add-right {
+    right: 10px;
+    background-image: url('add-right.png');
+}
+
+.sticky-add img {
+    width: 100%;
+    height: auto;
+}
+
+.sticky-add button {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sticky-add button:hover {
+    background-color: #e60000;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 100px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    border-radius: 8px;
+    color: white
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+label {
+    width: 100%;
+    display: block;
+}
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.name-container input#first-name {
+    margin-right: 200px; 
+    width: 100%;
+}
+
+.name-container input#last-name { 
+    width: 100%;
+}
+
+#first-name {
+    width: 48%;
+}
+
+#last-name {
+    width: 48%;
+}
+
+.last-name {
+    margin-right: 20%;
+}
+
+.phone-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#phone-code {
+    width: 30%;
+}
+
+#phone-number {
+    width: 65%;
+}
+button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}

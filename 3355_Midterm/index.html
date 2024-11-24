@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3355 Midterm Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="add-left" class="sticky-add">
+        <img src="add-left.jpg" alt="Add Left" />
+        <button onclick="hideAdd('add-left')">Close</button>
+    </div>
+    
+    <div id="add-right" class="sticky-add">
+        <img src="add-right.jpg" alt="Add Right" />
+        <button onclick="hideAdd('add-right')">Close</button>
+    </div>
+
+    <form id="main-form">
+        <div class="name-container">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" class="first-name" required>
+        
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" class="last-name" required>
+        </div>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <div class="phone-container">
+            <label for="phone-code">Phone:</label>
+            <select id="phone-code" required></select>
+            <input type="text" id="phone-number" required>
+        </div>
+
+        <label for="company">Company:</label>
+        <select id="company" required></select>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" required></select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
