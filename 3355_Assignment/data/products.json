@@ -1,0 +1,170 @@
+[
+    {
+      "id": 1,
+      "name": "Laptop",
+      "description": "Yüksek performanslı bir dizüstü bilgisayar.",
+      "price": 10299,
+      "image": "assets/images/laptop.jpg",
+      "category": "Elektronik",
+      "features": [
+        "Intel i7 İşlemci",
+        "16GB RAM",
+        "512GB SSD",
+        "GTX 1660 Ti Ekran Kartı"
+      ],
+      "reviews": [
+        {"user": "Ali", "rating": 5, "comment": "Harika bir laptop!"},
+        {"user": "Ayşe", "rating": 4, "comment": "Fiyat/performans çok iyi."}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Akıllı Telefon",
+      "description": "Yeni nesil akıllı telefon.",
+      "price": 61299,
+      "image": "assets/images/akıllıtelefon.jpg",
+      "category": "Elektronik",
+      "features": [
+        "IPhone 16",
+        "8GB RAM",
+        "256GB Hafıza",
+        "48MP Kamera"
+      ],
+      "reviews": [
+        {"user": "Mehmet", "rating": 4, "comment": "Mükemmel bir telefon."},
+        {"user": "Zeynep", "rating": 5, "comment": "Kesinlikle tavsiye ederim!"}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Spor Ayakkabı",
+      "description": "Koşu için özel spor ayakkabısı.",
+      "price": 1123,
+      "image": "assets/images/sporayakkabı.jpg",
+      "category": "Ayakkabı",
+      "features": [
+        "Yüksek yastıklama",
+        "Kaymaz taban",
+        "Hızlı kuruyan malzeme"
+      ],
+      "reviews": [
+        {"user": "Emre", "rating": 5, "comment": "Harika konfor."},
+        {"user": "Fatma", "rating": 4, "comment": "Çok rahat ama biraz pahalı."}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Tişört",
+      "description": "Pamuklu rahat tişört.",
+      "price": 399,
+      "image": "assets/images/tişört.jpg",
+      "category": "Giyim",
+      "features": [
+        "Pamuk kumaş",
+        "Yumuşak doku",
+        "Sade ve şık tasarım"
+      ],
+      "reviews": [
+        {"user": "Okan", "rating": 4, "comment": "Çok rahat, ama biraz dar."},
+        {"user": "Selin", "rating": 5, "comment": "Kesinlikle tavsiye ederim!"}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Kamera",
+      "description": "4K video çekebilen profesyonel kamera.",
+      "price": 1013,
+      "image": "assets/images/kamera.jpg",
+      "category": "Elektronik",
+      "features": [
+        "4K çözünürlük",
+        "Wi-Fi bağlantısı",
+        "Dahili mikrofon"
+      ],
+      "reviews": [
+        {"user": "Berk", "rating": 5, "comment": "Mükemmel kamera."},
+        {"user": "Cansu", "rating": 4, "comment": "Çok iyi ama fiyatı biraz yüksek."}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Çanta",
+      "description": "Günlük kullanım için şık çanta.",
+      "price": 893,
+      "image": "assets/images/çanta.jpg",
+      "category": "Aksesuar",
+      "features": [
+        "Dayanıklı malzeme",
+        "Geniş iç hacim",
+        "Şık tasarım"
+      ],
+      "reviews": [
+        {"user": "Emre", "rating": 5, "comment": "Harika çanta!"}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Kol Saati",
+      "description": "Erkekler için klasik kol saati.",
+      "price": 1049,
+      "image": "assets/images/kolsaati.jpg",
+      "category": "Aksesuar",
+      "features": [
+        "Paslanmaz çelik kasa",
+        "Su geçirmez",
+        "Klasik tasarım"
+      ],
+      "reviews": [
+        {"user": "Ali", "rating": 5, "comment": "Çok şık bir saat."}
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Kapatıcı",
+      "description": "Cilt tonunu dengeleyici kapatıcı.",
+      "price": 429,
+      "image": "assets/images/kapatıcı.jpg",
+      "category": "Makyaj",
+      "features": [
+        "Cilt tonunu eşitleme",
+        "Hafif yapılı",
+        "Uzun süre kalıcı"
+      ],
+      "reviews": [
+        {"user": "Zeynep", "rating": 4, "comment": "Gayet iyi, tavsiye ederim."}
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Beyaz Gömlek",
+      "description": "Klasik beyaz gömlek.",
+      "price": 590,
+      "image": "assets/images/beyazgömlek.jpg",
+      "category": "Giyim",
+      "features": [
+        "Yüksek kaliteli kumaş",
+        "Şık ve sade tasarım",
+        "Konforlu kullanım"
+      ],
+      "reviews": [
+        {"user": "Ali", "rating": 4, "comment": "İyi ama fiyat biraz yüksek."}
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Makyaj Seti",
+      "description": "Komple makyaj seti.",
+      "price": 1125,
+      "image": "assets/images/makyajseti.jpg",
+      "category": "Makyaj",
+      "features": [
+        "Tüm yüz için makyaj malzemeleri",
+        "Uzun süre kalıcı",
+        "Cilt dostu"
+      ],
+      "reviews": [
+        {"user": "Ayşe", "rating": 5, "comment": "Harika bir set!"}
+      ]
+    }
+  ]
+  

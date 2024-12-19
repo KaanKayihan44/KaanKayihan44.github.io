@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendyol</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trendyol</h1>
+        <input type="text" id="search-input" placeholder="Ürün ara..." oninput="searchProducts()">
+    </header>
+
+    <main>
+        <h2>Ürünler</h2>
+        <div id="product-list" class="product-list"></div>
+        <div id="no-results" style="display:none;">Sonuç bulunamadı</div>
+    </main>
+
+    <footer>
+        <p>© 2024 Trendyol</p>
+    </footer>
+
+    <script>
+        let products = [];
+
+        fetch('data/products.json')
+          .then(response => response.json())
+          .then(data => {
+            products = data;
+            displayProducts(products);
+          })
+          .catch(error => console.error('Ürünler yüklenemedi:', error));
+
+        function displayProducts(products) {
+            const productList = document.getElementById('product-list');
+            const noResultsMessage = document.getElementById('no-results');
+            productList.innerHTML = '';
+            noResultsMessage.style.display = 'none';
+
+            if (products.length === 0) {
+                noResultsMessage.style.display = 'block';
+                return;
+            }
+
+            products.forEach(product => {
+              const productElement = document.createElement('div');
+              productElement.classList.add('product');
+              productElement.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" />
+                <h3>${product.name}</h3>
+                <p>${product.description}</p>
+                <p>${product.price} TL</p>
+                <button onclick="viewDetails(${product.id})">Detaylar</button>
+              `;
+              productList.appendChild(productElement);
+            });
+        }
+
+        function viewDetails(productId) {
+          window.location.href = `detail.html?id=${productId}`;
+        }
+
+        function searchProducts() {
+            const searchQuery = document.getElementById('search-input').value.toLowerCase();
+            const productList = document.getElementById('product-list');
+            const products = productList.getElementsByClassName('product');
+            const noResultsMessage = document.getElementById('no-results');
+
+            let found = false;
+            for (let product of products) {
+                const productName = product.getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (productName.includes(searchQuery)) {
+                    product.style.display = '';
+                    found = true;
+                } else {
+                    product.style.display = 'none';
+                }
+            }
+
+            if (!found && searchQuery.length > 0) {
+                noResultsMessage.style.display = 'block';
+            } else {
+                noResultsMessage.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
