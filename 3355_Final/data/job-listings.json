@@ -1,0 +1,42 @@
+[
+  {
+      "id": 1,
+      "title": "Software Developer",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "description": "A great opportunity for a developer.",
+      "location": "Istanbul, Turkey",
+      "lastUpdated": "2025-01-13",
+      "applications": 5
+  },
+  {
+      "id": 2,
+      "title": "Marketing Manager",
+      "city": "Izmir",
+      "country": "Turkey",
+      "description": "Join our marketing team.",
+      "location": "Izmir, Turkey",
+      "lastUpdated": "2025-01-10",
+      "applications": 3
+  },
+  {
+      "id": 3,
+      "title": "Graphic Designer",
+      "city": "Berlin",
+      "country": "Germany",
+      "description": "Creative position in Berlin.",
+      "location": "Berlin, Germany",
+      "lastUpdated": "2025-01-12",
+      "applications": 2
+  },
+  {
+      "id": 4,
+      "title": "Project Manager",
+      "city": "Los Angeles",
+      "country": "USA",
+      "description": "Manage projects in Los Angeles.",
+      "location": "Los Angeles, USA",
+      "lastUpdated": "2025-01-09",
+      "applications": 4
+  }
+]

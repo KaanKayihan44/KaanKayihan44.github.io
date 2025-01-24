@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="jobSearch">Job Search - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/logo.png" alt="Job Search Logo" id="logo">
+        <h1 data-lang-key="jobSearch">Job Search</h1>
+        <nav>
+            <a href="login.html" data-lang-key="login">Login</a>
+            <a href="register.html" data-lang-key="register">Register</a>
+            <select id="language-switch" onchange="switchLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="tr">Türkçe</option>
+            </select>            
+        </nav>
+    </header>
+    <main>
+        <section id="search">
+            <input type="text" id="position" placeholder="Search by position" data-lang-key="searchPlaceholder">
+            <button id="search-button" data-lang-key="search">Search</button>
+        </section>
+        <section id="job-list">
+            <h2 data-lang-key="jobsInYourArea">Jobs in Your Area</h2>
+            <ul>
+                <li data-id="1" data-title="Software Developer">
+                    <h3>Software Developer</h3>
+                    <p><strong data-lang-key="location">Location:</strong> Istanbul, tr</p>
+                    <p><strong data-lang-key="lastUpdated">Last Updated:</strong> 2025-01-13</p>
+                    <p><strong data-lang-key="applications">Applications:</strong> 5</p>
+                    <button onclick="viewJobDetails(1)" data-lang-key="viewDetails">View Details</button>
+                </li>
+                <li data-id="2" data-title="Marketing Manager">
+                    <h3>Marketing Manager</h3>
+                    <p><strong data-lang-key="location">Location:</strong> Izmir, tr</p>
+                    <p><strong data-lang-key="lastUpdated">Last Updated:</strong> 2025-01-10</p>
+                    <p><strong data-lang-key="applications">Applications:</strong> 3</p>
+                    <button onclick="viewJobDetails(2)" data-lang-key="viewDetails">View Details</button>
+                </li>
+                <li data-id="3" data-title="Graphic Designer">
+                    <h3>Graphic Designer</h3>
+                    <p><strong data-lang-key="location">Location:</strong> Berlin, de</p>
+                    <p><strong data-lang-key="lastUpdated">Last Updated:</strong> 2025-01-12</p>
+                    <p><strong data-lang-key="applications">Applications:</strong> 2</p>
+                    <button onclick="viewJobDetails(3)" data-lang-key="viewDetails">View Details</button>
+                </li>
+                <li data-id="4" data-title="Project Manager">
+                    <h3>Project Manager</h3>
+                    <p><strong data-lang-key="location">Location:</strong> Los Angeles, us</p>
+                    <p><strong data-lang-key="lastUpdated">Last Updated:</strong> 2025-01-09</p>
+                    <p><strong data-lang-key="applications">Applications:</strong> 4</p>
+                    <button onclick="viewJobDetails(4)" data-lang-key="viewDetails">View Details</button>
+                </li>
+            </ul>
+        </section>
+        <aside id="filters">
+            <h3 data-lang-key="filters">Filters</h3>
+            <label>
+                <span data-lang-key="filterCountry">Country:</span>
+                <select id="country-filter" onchange="updateCities()">
+                    <option value="tr">Turkey</option>
+                    <option value="us">USA</option>
+                    <option value="de">Germany</option>
+                </select>
+            </label>
+            <label>
+                <span data-lang-key="filterCity">City:</span>
+                <select id="city-filter"></select>
+            </label>
+            <label>
+                <span data-lang-key="filterWorkingPreference">Working Preference:</span>
+                <select id="working-preference-filter">
+                    <option value="remote" data-lang-key="remote">Remote</option>
+                    <option value="onsite" data-lang-key="onsite">On-site</option>
+                    <option value="hybrid" data-lang-key="hybrid">Hybrid</option>
+                </select>
+            </label>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2025 Job Search</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
